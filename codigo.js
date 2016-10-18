@@ -70,6 +70,17 @@ function user()
 });
 }
 
- 
+  function califica(){
+    
+    var calificacion=(contbuenas/contador)*10;
+    console.log("la calificacion es: "+calificacion);
+
+    var inserta='<h2 class="calificacion">Calificacion: '+calificacion+'</h2>';
+    
+    $('h2.calificacion').append(inserta);
+    $('h2.calificacion').show('slow');
+    $('button.califica').hide('slow');
+
+  }
 
   
